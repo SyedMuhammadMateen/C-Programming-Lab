@@ -1,0 +1,279 @@
+Code task 1:
+
+#include <stdio.h>
+
+int main(){
+    int age;
+    printf("Enter Your age");
+    scanf("%d", &age);
+    if(age >= 18)
+        printf("you can vote");
+    else
+        printf("you cannot vote");
+    return 0 ;
+}
+
+
+
+
+
+
+Code Task 2:
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter Your num: ");
+    scanf("%d", &num);
+    if (num % 2 == 0)
+        printf("Even number");
+    else
+        printf("Odd number");
+
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	int b;
+	int c;
+	printf("enter the first number: ");
+	scanf("%i" , &a);
+	printf("enter the second number: ");
+	scanf("%i" , &b);
+	printf("enter the third number: ");
+	scanf("%i" , &c);
+	if ((a> b) && (a> c)){
+		printf("number 1 is greatest");
+	}
+	else if ((b > a) && (b> c)){
+		printf("number 2 is greatest");
+	}
+	else if((c>a) && (c > b)){
+		printf("number 3 is greatest");
+	}
+    return 0;	
+}
+Code Task 9:
+
+#include <stdio.h>
+int main() {
+    int num;
+
+    printf("Enter a number (1-7): ");
+    scanf("%d", &num);
+ 
+    switch(num) {
+        case 1:
+            printf("Wednesday\n");
+            break;
+        case 2:
+            printf("Thursday\n");
+            break;
+        case 3:
+            printf("Friday\n");
+            break;
+        case 4:
+            printf("Saturday\n");
+            break;
+        case 5:
+            printf("Sunday\n");
+            break;
+        case 6:
+            printf("Monday\n");
+            break;
+        case 7:
+            printf("Tuesday\n");
+            break;
+        default:
+            printf("invalid number,enter a number between 1 and 7.\n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+Code Task 4:
+#include<stdio.h>
+  main()
+{
+	int marks;
+	printf("enter your score: ");
+	scanf("%d" , &marks);
+	if (marks >= 90){
+		printf("your grade : A");
+	}
+	else if ((marks >= 80) && (marks <= 89)){
+		printf("your grade : B");
+	}
+	else if ((marks >= 70) && (marks <= 79)){
+		printf("Your grade : C");
+	}
+	else if ((marks >=60) && (marks <=69)){
+		printf("Your grade : D");
+	}
+	else{
+		printf("Your grade: F");
+	}
+              return 0 ;
+}
+
+
+Code Task 5:
+#include<stdio.h>
+
+main()
+{
+	int input;
+	printf("enter the colour of the traffic light\n1 green\n2 yellow\n3 red\n");
+	scanf("%i" , &input);
+	switch(input){
+		case 3:
+			printf("Stop");
+			break;
+			
+		case 2:
+			printf("Ready");
+			break;
+		case 1:
+			printf("Go");
+			break;
+		default:
+			printf("invalid input");
+	}
+}
+
+
+
+
+Code Task 6:
+ #include <stdio.h>
+
+int main() {
+    float a, b, answer;
+    char opp;
++
+    printf("Enter first number: ");
+    scanf("%f", &a);
+
+   
+    printf("Enter second number: ");
+    scanf("%f", &b);
+
+    
+    printf("Choose operator (+ - * /): ");
+    scanf(" %c", &opp); 
+
+    switch (opp) {
+        case '+':
+            answer = a + b;
+            printf("Sum = %.2f\n", answer);
+            break;
+        case '-':
+            answer = a - b;
+            printf("Difference = %.2f\n", answer);
+            break;
+        case '*':
+            answer = a * b;
+            printf("Product = %.2f\n", answer);
+            break;
+        case '/':
+            if (b != 0) {
+                answer = a / b;
+                printf("Quotient = %.2f\n", answer);
+            } else {
+                printf("Cannot divide by zero!\n");
+            }
+            break;
+        default:
+            printf("Invalid operator \n");
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task 7:
+#include <stdio.h>
+
+main()
+{
+	int year;
+	printf("Enter the year: ");
+	scanf("%i" , &year);
+	if ((year%4==0) && (year%100!=0)){
+		printf("It is a leap year");
+	}
+	else{
+		printf("It is not a leap year");
+	}
+}
+
+
+
+
+
+Task 8:
+#include<stdio.h>
+
+main()
+{
+	int a;
+	printf("Enter number: ");
+	scanf("%i",&a);
+	if (a > 0){
+		printf(" Your number is positive");
+	}
+	else if (a < 0){
+		printf(" Your number is negative");
+	}
+	else if (a == 0){
+		printf(" Your number is 0");
+	}
+	
+	return 0 ;
+}
+
+
+
+Code Task 10:
+#include <stdio.h>
+
+int main() {
+    int password;
+    int True_password = 1234;
+
+    printf("Enter the password: ");
+    scanf("%d", &password);
+
+    if (password == True_password) {
+        printf("Access Granted\n");
+    } else {
+         printf("Access Denied\n");
+    }
+
+    return 0;
+}
+
+
+
